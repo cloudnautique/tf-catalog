@@ -12,3 +12,4 @@ spec:
     - rancher-keys
     envConfigNames:
     - env-config
+    - {{ template "gce-cluster.fullname" . }}-chart-config

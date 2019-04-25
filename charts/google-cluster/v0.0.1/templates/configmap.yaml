@@ -1,0 +1,7 @@
+apiVersion: v1
+type: ConfigMap
+metadata:
+  name: {{ template "gce-cluster.fullname" . }}-chart-config
+data:
+  TF_VAR_cluster_leader_count: {{ .Values.cluster_leader_count }}
+  TF_VAR_cluster_worker_count: {{ .Values.cluster_worker_count }}

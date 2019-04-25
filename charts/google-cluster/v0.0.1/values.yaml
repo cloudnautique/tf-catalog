@@ -1,1 +1,2 @@
-
+cluster_leader_count: 1
+cluster_worker_count: 0

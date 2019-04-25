@@ -1,0 +1,11 @@
+questions:
+- variable: cluster_leader_count
+  default: 1
+  description: "Number of controlplane/etcd nodes to create"
+  label: Workers
+  type: int
+- variable: cluster_worker_count
+  default: 0
+  description: "Number of worker nodes to create"
+  label: Workers
+  type: int
