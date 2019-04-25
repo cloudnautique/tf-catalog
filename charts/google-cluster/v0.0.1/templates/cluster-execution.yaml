@@ -1,7 +1,7 @@
 apiVersion: terraform-operator.cattle.io/v1
 kind: Execution
 metadata:
-  name: {{ template "gce-cluster.fullname" }}
+  name: {{ template "gce-cluster.fullname" . }}
 spec:
   moduleName: google-cluster
   destroyOnDelete: true
