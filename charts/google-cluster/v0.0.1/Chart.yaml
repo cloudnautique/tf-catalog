@@ -1,0 +1,13 @@
+apiVersion: v1
+description: "Launch a GCE Rancher RKE Cluster"
+name: gce-rancher
+version: 0.0.1
+appVersion: 0.0.1
+home: https://rancher.com
+icon: file://../logo.png
+keywords:
+- clusters
+- infrastructure
+maintainers:
+- name: cloundautique
+  email: devnull@rancher.com

@@ -1,0 +1,14 @@
+apiVersion: terraform-operator.cattle.io/v1
+kind: Execution
+metadata:
+  name: {{ template "gce-cluster.fullname" }}
+spec:
+  moduleName: google-cluster
+  destroyOnDelete: true
+  autoConfirm: true
+  image: cloudnautique/tf-executor-rancher2-provider:v0.0.3
+  variables:
+    SecretNames:
+    - rancher-keys
+    envConfigNames:
+    - env-config
