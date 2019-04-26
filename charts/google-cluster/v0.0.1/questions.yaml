@@ -4,11 +4,13 @@ questions:
   description: "Number of controlplane/etcd nodes to create"
   label: Controlplane/etcd
   type: int
+  group: "Control Plane"
 - variable: cluster_worker_count
   default: 0
   description: "Number of worker nodes to create"
   label: Workers
   type: int
+  group: "Worker Nodes"
 - variable: gcp_region
   default: us-central1
   type: enum
@@ -23,7 +25,9 @@ questions:
   default: "n1-standard-2"
   label: "Leader Instance Type"
   type: string
+  group: "Control Plane"
 - variable: gcp_worker_machine_type
   default: "n1-standard-2"
   label: "Worker Instance Type"
   type: string
+  group: "Worker Nodes"
