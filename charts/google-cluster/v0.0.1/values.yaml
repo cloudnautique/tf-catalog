@@ -1,2 +1,5 @@
 cluster_leader_count: 1
 cluster_worker_count: 0
+gcp_region: "us-central1"
+gcp_leader_machine_type: "n1-standard-2"
+gcp_worker_machine_type: "n1-standard-2"
